@@ -2,6 +2,7 @@
 #set :scm_username, "amolkhanorkar-webonise"
 set :application, "post_app"
 set :repository,  "https://github.com/amolkhanorkar-webonise/Rails/tree/master/Rails_Demo_Assignment"
+set :scm, "git"
 set :deploy_to, "/var/www/project"
 set :use_sudo, false 
 set :ssh_auth_methods, "publickey"
