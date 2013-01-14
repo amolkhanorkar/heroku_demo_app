@@ -5,7 +5,7 @@ set :repository,  "https://github.com/amolkhanorkar-webonise/Rails/tree/master/R
 set :deploy_to, "/var/www/project"
 set :use_sudo, false 
 set :ssh_auth_methods, "publickey"
-set :ssh_keys, ["/home/webonise/.ssh/id_rsa.pub"]
+set :ssh_keys, ["/home/webonise/.ssh"]
 set :ssh_froward_agent, true
 set :user, "webonise"
 set :runner, "webonise"  
@@ -14,9 +14,9 @@ set :rails_env, "production"
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-role :app, "192.168.0.130:22", {:primary=>true}
-role :db, "192.168.0.130:22", {:primary=>true}
-role :web, "192.168.0.130"
+        role :app, "192.168.0.130:22", {:primary=>true}
+        role :db, "192.168.0.130:22", {:primary=>true}
+        role :web, "192.168.0.130"
 
 
 
